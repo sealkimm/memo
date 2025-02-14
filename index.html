@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Memo</title>
+
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			h2 {
+				text-align: center;
+			}
+			.container {
+				padding: 20px;
+			}
+			.container h3 {
+				font-weight: 800;
+				margin-bottom: 10px;
+			}
+			.container .box {
+				position: relative;
+				padding: 20px 0;
+				word-break: keep-all;
+			}
+			.container .box:first-child {
+				padding-top: 0;
+			}
+			.box::after {
+				display: block;
+				content: '';
+				position: absolute;
+				left: 50%;
+				bottom: 0;
+				transform: translateX(-50%);
+				width: 98%;
+				height: 1px;
+				background-color: green;
+			}
+			.box:last-child::after {
+				display: none;
+			}
+			.box .bold {
+				display: block;
+				font-size: 15px;
+				font-weight: 800;
+				margin-top: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Memo</h2>
+		<div class="container">
+			<div class="box">
+				<h3>+ Today</h3>
+				<p>
+					당근, 서랍정리, 중문 찾아보기, 식물, 분리수거 방법, 화장실 상부장 설치, 우드락작업 우리은행 이체된거 뭔지 확인, 보험납부확인, 보험환급확인, 원형상판, 돈정리,
+					수전 찾아보기 노션정리, 이직정리 청년몽땅, 가구제작 금액대, 변기커버, 관리비공과금 노션정리, 인터넷선정리함<br />
+					<span class="bold">• 환불건 확인</span>쿠팡 휴지걸이 2개, 무인양품 환불, 다이소 환불2건, 오라플 무타공, 소파, 에어컨 커버<br />
+					<span class="bold">• 당근</span>달바, 마와옷걸이, 오아가습기, 조던바지, 펠리컨 등
+				</p>
+			</div>
+			<div class="box">
+				<h3>+ Weekday</h3>
+				<p>동대문, Today 자료</p>
+				<p>오늘의집/쿠팡/숨고 후기작성, 주소바꾸기(보험?), 천가방 세워넣을 판, 국민은행 한도계좌 해지</p>
+			</div>
+			<div class="box">
+				<h3>+ 보수</h3>
+				<p>
+					<span class="bold">화장실</span>빗, 상부장, 샤워기헤드 교체, 거울꾸미기, 변기뚜껑 교체<br />
+					<span class="bold">옷장</span>가방정리, 분리수거, 스프레이 돌돌이 거치대<br />
+					<span class="bold">주방</span>조미료 등 정리, 냄비 뚜겅 정리, 세제 보관통, 수세미 세제 통, 가스레인지 가리개, 부착식 서랍(영양제,리모콘)<br />
+					<span class="bold">거실</span> 식물, 에어컨 커버, 커튼, 화장대제작
+				</p>
+			</div>
+			<div class="box">
+				<h3>+ Exit</h3>
+				<p>
+					뭐든 사용자가 있는 사이트 만들기<br />
+					반응형<br />
+					쓰리js - 사이트 만들기<br />
+					채팅앱 - 슬랙 같은 <br />
+					리액트 + 타입 - 주제는...<br />
+					프로그래머스<br />
+					백엔드 강의<br />
+					스토리북<br />
+					UI 키트<br />
+					eslint + prettier<br />
+					폴더구조 최적화<br />
+					ssr, isr, csr 등<br />
+					CI/CD 파이프라인<br />
+					이력서 - 기술이력<br />
+					포폴<br />
+					현재? - 간단한 todo
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
